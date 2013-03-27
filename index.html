@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+	<title>Summarize you will!</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+</head>
+
+<body>
+
+		<form action="" id="form" method="get">
+			<input type="text" id="url" name="url"/>
+			<input type="submit" value="Submit"/>
+		</form>
+
+</body>
+
+<script type="text/javascript">
+
+		var clippedAPI = "http://clipped.me/algorithm/clippedapi.php";
+		
+		$.ajax({
+			url: clippedAPI,
+			type: "GET",
+			dataType: "JSONP",
+			data: {
+			url: "http://pandodaily.com/2013/03/26/y-combinator-demo-day-2013-still-looking-for- the-next-airbnb-or-dropbox/"}
+		}).done(function(json) {
+        	console.log("JSON Data: " + json.title );
+		}).fail(function(jqxhr, textStatus, error){
+        	var err = textStatus + ', ' + error;
+        	console.log("Request Failed: " + err);
+});
+
+</script>
+
+
+</html>
