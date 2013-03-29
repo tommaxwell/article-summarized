@@ -10,29 +10,35 @@
 
 <body>
 
-		<form action="" id="form" method="get">
-			<input type="text" id="url" name="url"/>
-			<input type="submit" value="Submit"/>
-		</form>
+	<form id="form" method="get">
+		<input id="webAddress" type="text" name="url"/>
+		<input id="submit" type="submit" value="Submit"/>
+	</form>
 
 </body>
 
 <script type="text/javascript">
 
-		var clippedAPI = "http://clipped.me/algorithm/clippedapi.php";
-		
-		$.ajax({
-			url: clippedAPI,
-			type: "GET",
-			dataType: "JSONP",
-			data: {
-			url: "http://pandodaily.com/2013/03/26/y-combinator-demo-day-2013-still-looking-for- the-next-airbnb-or-dropbox/"}
+var clippedAPI = "http://clipped.me/algorithm/clippedapi.php";
+
+$('#form').submit(function(){
+
+	$.ajax({
+		url: clippedAPI,
+		type: "GET",
+		dataType: "JSONP",
+		data: {url: $('#webAddress').val()}
 		}).done(function(json) {
-        	console.log("JSON Data: " + json.title );
+			console.log("JSON Data: " + json.title );
 		}).fail(function(jqxhr, textStatus, error){
-        	var err = textStatus + ', ' + error;
-        	console.log("Request Failed: " + err);
-});
+			var err = textStatus + ', ' + error;
+			console.log("Request Failed: " + err);
+
+		});
+
+		return false;
+	});
+
 
 </script>
 
