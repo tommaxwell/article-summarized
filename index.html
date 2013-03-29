@@ -15,7 +15,8 @@
 		<input id="submit" type="submit" value="Submit"/>
 	</form>
 
-	<div id="titleresult"></div>
+	<div id="title"></div>
+	<div id="summary"></div>
 
 </body>
 
@@ -32,7 +33,8 @@ $('#form').submit(function(){
 		data: {url: $('#webAddress').val()}
 		}).done(function(json) {
 			console.log("JSON Data: " + json.title );
-			$('#titleresult').append(json.title);
+			$('#title').append(json.title);
+			$('#summary').append(json.summary);
 		}).fail(function(jqxhr, textStatus, error){
 			var err = textStatus + ', ' + error;
 			console.log("Request Failed: " + err);
