@@ -1,3 +1,5 @@
+Demo located at http://54.225.211.118/ (hosted on AWS EC2)
+
 This project utilizes the Clipped API (http://clipped.me/api.html) to create a web interface for summarizing articles from across the web. It's
 a work in progress.
 
