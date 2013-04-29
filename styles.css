@@ -1,0 +1,161 @@
+a {
+	text-decoration: none;
+	color:#000;
+}
+
+a:visited {
+	color: #000;
+}
+
+#homepage_container {
+	position: relative;
+	margin: 0 auto;
+	width: 100%;
+	max-width: 626px;
+	top:100px;
+}
+
+h1 {
+	text-align: center;
+}
+
+h1 a:last-child{
+	color:rgba(63, 131, 202, 1);
+}
+
+#form{
+	position:relative;
+	margin:0 auto;
+	width:100%;
+	max-width: 627px;
+	height:35px;
+}
+
+#json_container{
+	position: relative;
+	margin: 0 auto;
+	width: 100%;
+	max-width: 39em;
+	border:1px solid #9e9e9e;
+	border-radius:3px;
+	margin-top: 20px;
+}
+
+.hideContainer {
+	display:none;
+}
+
+#webAddress{
+	position: absolute;
+	float: left;
+	width: 100%;
+	max-width: 500px;
+	height:100%;
+	outline:none;
+	border:1px solid #8d8d8d;
+	background: white;
+	border-radius:3px;
+	box-shadow: inset 1px 1px 2px #999;
+	padding-left:5px;
+}
+
+#footer {
+	position: fixed;
+	width: 100%;
+	bottom: 0;
+	text-align: right;
+	font-size: 0.8em;
+	border-top:1px solid #e5e5e5;
+	background: #fbfbfb;
+}
+
+#footer p {
+	margin: 8px 0 8px 0;
+	color: rgba(0,0,0,0.5);
+	font-family: 'Droid Sans', sans-serif;
+}
+
+h1 a{
+	font-family: 'Merriweather Sans', sans-serif;
+}
+
+#footer a {
+	text-decoration: none;
+	color: rgba(0,0,0,0.5);
+	transition: color 0.5s ease;
+	-moz-transition: color 0.5s ease;
+	-webkit-transition: color 0.5s ease;
+}
+
+#footer a:hover {
+	color: rgba(0,0,0,0.6);
+	transition: color 0.5s ease;
+	-moz-transition: color 0.5s ease;
+	-webkit-transition: color 0.5s ease;
+}
+
+#footer a:visited {
+	color: rgba(0,0,0,0.5);
+}
+
+#footer a:first-child {
+	margin-right: 7px;
+}
+
+#footer a:last-child{
+	margin-right:20px;
+	padding-left: 7px;
+	border-left:1px dotted rgba(0,0,0,0.5);
+}
+
+#footer p:first-child {
+	position: relative;
+	float: left;
+	margin-left: 20px;
+}
+
+#summary {
+	margin:5px 10px 15px 7px;
+	font-family:'Droid Sans', sans-serif;
+}
+
+#summary li {
+	margin-bottom:17px;
+}
+
+#site-description {
+	position: relative;
+	top:4em;
+	font-size: 1.2em;
+	font-family:'Droid Sans', sans-serif;
+	text-align: center;
+}
+
+
+#title {
+	position:relative;
+	bottom:16px;
+	background-color:#f5f5f5;
+	border-bottom: 1px solid #d1d1d1;
+	box-shadow: inset 0 1px 0 #fbfbfb;
+	text-align:center;
+	font-weight: bold;
+	font-family: 'Droid Sans', sans-serif;
+
+}
+
+#json_title{
+	position: relative;
+	top:8px;
+	padding:0 5px 0 5px;
+}
+
+#search-wrapper {
+	position: relative;
+	float: right;
+	overflow: hidden;
+}
+
+#submit {
+	height:39px;
+}

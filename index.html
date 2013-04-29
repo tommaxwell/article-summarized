@@ -3,20 +3,39 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 
 <head>
-	<title>Summarize you will!</title>
+	<title>Summarize It!</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 	<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+	<link href='http://fonts.googleapis.com/css?family=Merriweather+Sans:700,800' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="styles.css" type="text/css" media="screen">
+	<link rel="stylesheet" type="text/css" href="normalize.css">
 </head>
 
 <body>
 
-	<form id="form" method="get">
-		<input id="webAddress" type="text" name="url"/>
-		<input id="submit" type="submit" value="Submit"/>
-	</form>
+<div id="homepage_container">
 
+<h1><a href="/">Summarize</a><a href="/">It</a></h1>
+
+<form id="form" method="get">
+	<input id="webAddress" type="text" name="url" placeholder="Paste your URL here, stupid"/>
+	<input id="submit" type="submit" value="Summarize!">
+</form>
+
+<div id="json_container">
 	<div id="title"></div>
 	<ul id="summary"></ul>
+</div>
+
+<p id="site-description"><b>SummarizeIt is an arguably useless site</b> that utilizes the Clipped API to summarize news articles from across the web. To summarize an article, <b>just paste the URL above, click "Summarize!",</b> and you're done.</p>
+
+</div>
+
+<div id="footer">
+	<p>For when you don't feel like reading the whole thing.</p>
+	<p><a href="http://www.twitter.com/tommaxwelll">@tommaxwelll</a><a href="http://clipped.me/api.html">Clipped API</a></p>
+</div>
 
 <script src="/addressinput.js" type="text/javascript"></script>
 
